@@ -28,8 +28,8 @@ return [
         'enabled' => false,
         'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
         'files' => [
-            // 'routes/web' => 'Routes/web.php',
-            // 'routes/api' => 'Routes/api.php',
+            'routes/web' => 'Routes/web.php',
+            'routes/api' => 'Routes/api.php',
             // 'views/index' => 'Resources/views/index.blade.php',
             // 'views/master' => 'Resources/views/layouts/master.blade.php',
             'scaffold/config' => 'Config/config.php',
@@ -40,13 +40,13 @@ return [
             // 'package' => 'package.json',
         ],
         'replacements' => [
-            // 'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
-            // 'routes/api' => ['LOWER_NAME'],
+            'routes/web' => ['LOWER_NAME', 'STUDLY_NAME'],
+            'routes/api' => ['LOWER_NAME'],
             // 'webpack' => ['LOWER_NAME'],
             'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
             // 'views/index' => ['LOWER_NAME'],
             // 'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
-            // 'scaffold/config' => ['STUDLY_NAME'],
+             'scaffold/config' => ['STUDLY_NAME'],
             'composer' => [
                 'LOWER_NAME',
                 'STUDLY_NAME',
